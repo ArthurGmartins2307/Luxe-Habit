@@ -7,7 +7,9 @@
   
   --color-brand-gold: #C5A059;
   --color-brand-dark: #0F172A;
-  --color-brand-light: #F8FAFC;
+  --color-brand-light: #FFFFFF;
+  --color-input-bg-light: #F1F5F9;
+  --color-border-light: #E2E8F0;
 }
 
 @layer base {
@@ -22,8 +24,104 @@
 }
 
 .light {
-  background-color: var(--color-brand-light);
-  color: var(--color-brand-dark);
+  background-color: #FBFDFF;
+  color: #1E293B;
+}
+
+/* Forçar visibilidade em elementos do modo claro */
+.light .bg-white {
+  background-color: #FFFFFF !important;
+  border-color: #F1F5F9 !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.02), 0 2px 10px -2px rgba(0, 0, 0, 0.01) !important;
+}
+
+.light .bg-slate-50, 
+.light .bg-gray-50,
+.light .bg-slate-100 {
+  background-color: #F8FAFC !important;
+}
+
+.light input, 
+.light select, 
+.light textarea {
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  color: #0F172A !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02) !important;
+}
+
+.light input::placeholder {
+  color: #94A3B8 !important;
+}
+
+.light input:focus, 
+.light select:focus, 
+.light textarea:focus {
+  border-color: #C5A059 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(197, 160, 89, 0.1) !important;
+}
+
+.light .text-slate-500,
+.light .text-gray-500 {
+  color: #64748B !important;
+}
+
+.light .text-slate-600,
+.light .text-slate-700,
+.light .text-slate-800,
+.light .text-gray-400 {
+  color: #334155 !important;
+}
+
+.light .text-slate-900,
+.light .text-slate-950,
+.light .text-gray-900 {
+  color: #020617 !important;
+}
+
+.light .border-slate-100,
+.light .border-slate-200,
+.light .border-gray-100,
+.light .border-gray-200 {
+  border-color: #E2E8F0 !important;
+}
+
+.light .shadow-sm {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03) !important;
+}
+
+.light .shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+}
+
+/* Sonner / Toast Theme Overrides */
+.light [data-sonner-toast] {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  color: #0F172A !important;
+}
+
+.light .shadow-inner {
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.light nav a {
+  color: #0F172A !important;
+}
+
+.light nav a:hover {
+  color: #C5A059 !important;
+}
+
+.light nav span.font-display,
+.light nav span.font-display span {
+  color: #020617 !important;
+}
+
+.light nav span.font-display span.text-brand-gold {
+  color: #C5A059 !important;
 }
 
 /* Custom Scrollbar */

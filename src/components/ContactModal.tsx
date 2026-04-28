@@ -52,7 +52,7 @@ export default function ContactModal({ property, onClose, onSubmit }: ContactMod
             <label className="text-xs font-bold uppercase text-gray-500">Nome Completo</label>
             <input
               {...register('name')}
-              className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-800 border rounded-xl outline-none focus:ring-2 focus:ring-brand-gold"
+              className="w-full px-4 py-2.5 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-xl outline-none focus:ring-2 focus:ring-brand-gold dark:text-white text-brand-dark"
               placeholder="Seu nome"
             />
             {errors.name && <p className="text-red-500 text-[10px]">{errors.name.message}</p>}
@@ -63,7 +63,7 @@ export default function ContactModal({ property, onClose, onSubmit }: ContactMod
               <label className="text-xs font-bold uppercase text-gray-500">E-mail</label>
               <input
                 {...register('email')}
-                className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-800 border rounded-xl outline-none focus:ring-2 focus:ring-brand-gold"
+                className="w-full px-4 py-2.5 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-xl outline-none focus:ring-2 focus:ring-brand-gold dark:text-white text-brand-dark"
                 placeholder="exemplo@email.com"
               />
               {errors.email && <p className="text-red-500 text-[10px]">{errors.email.message}</p>}
@@ -72,7 +72,7 @@ export default function ContactModal({ property, onClose, onSubmit }: ContactMod
               <label className="text-xs font-bold uppercase text-gray-500">Telefone</label>
               <input
                 {...register('phone')}
-                className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-800 border rounded-xl outline-none focus:ring-2 focus:ring-brand-gold"
+                className="w-full px-4 py-2.5 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-xl outline-none focus:ring-2 focus:ring-brand-gold dark:text-white text-brand-dark"
                 placeholder="(00) 00000-0000"
               />
               {errors.phone && <p className="text-red-500 text-[10px]">{errors.phone.message}</p>}
@@ -84,7 +84,7 @@ export default function ContactModal({ property, onClose, onSubmit }: ContactMod
             <textarea
               {...register('message')}
               rows={3}
-              className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-800 border rounded-xl outline-none focus:ring-2 focus:ring-brand-gold resize-none"
+              className="w-full px-4 py-2.5 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-xl outline-none focus:ring-2 focus:ring-brand-gold resize-none dark:text-white text-brand-dark"
               placeholder="Tenho interesse neste imóvel..."
             />
             {errors.message && <p className="text-red-500 text-[10px]">{errors.message.message}</p>}

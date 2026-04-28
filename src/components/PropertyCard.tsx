@@ -83,7 +83,7 @@ export default function PropertyCard({ property, isAdmin, onEdit, onDelete, onCo
 
         <button 
           onClick={() => onContact(property)}
-          className="w-full py-3 bg-gray-50 dark:bg-gray-800 hover:bg-brand-gold hover:text-white transition-all rounded-xl text-sm font-semibold border border-gray-200 dark:border-gray-700 hover:border-brand-gold"
+          className="w-full py-3 bg-slate-100 dark:bg-gray-800 hover:bg-brand-gold hover:text-white transition-all rounded-xl text-sm font-bold border border-slate-200 dark:border-gray-700 hover:border-brand-gold text-slate-700 dark:text-gray-300 shadow-sm"
         >
           Tenho Interesse
         </button>

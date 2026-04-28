@@ -8,14 +8,14 @@ interface AdminToggleProps {
 
 export default function AdminToggle({ isAdmin, onToggle }: AdminToggleProps) {
   return (
-    <div className="flex items-center gap-2 bg-gray-100 dark:bg-gray-900 p-1 rounded-full">
+    <div className="flex items-center gap-2 bg-slate-100 dark:bg-gray-900 p-1.5 rounded-full border border-slate-200 dark:border-gray-800 shadow-inner">
       <button
         onClick={() => onToggle(false)}
         className={cn(
-          "flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium transition-all",
+          "flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold transition-all",
           !isAdmin 
-            ? "bg-white dark:bg-gray-800 shadow-sm text-brand-dark dark:text-white" 
-            : "text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
+            ? "bg-white dark:bg-gray-800 shadow-md text-slate-900 dark:text-white ring-1 ring-slate-200 dark:ring-gray-700" 
+            : "text-slate-700 hover:text-slate-900 dark:text-gray-500 dark:hover:text-gray-300"
         )}
       >
         <User className="w-3.5 h-3.5" />
@@ -24,10 +24,10 @@ export default function AdminToggle({ isAdmin, onToggle }: AdminToggleProps) {
       <button
         onClick={() => onToggle(true)}
         className={cn(
-          "flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium transition-all",
+          "flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold transition-all",
           isAdmin 
-            ? "bg-brand-gold text-white shadow-sm" 
-            : "text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
+            ? "bg-brand-gold text-white shadow-md ring-1 ring-brand-gold/50" 
+            : "text-slate-700 hover:text-slate-900 dark:text-gray-500 dark:hover:text-gray-300"
         )}
       >
         <Shield className="w-3.5 h-3.5" />

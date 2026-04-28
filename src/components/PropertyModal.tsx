@@ -64,7 +64,7 @@ export default function PropertyModal({ property, onClose, onSubmit }: PropertyM
               <label className="text-xs font-bold uppercase text-gray-500">Título</label>
               <input
                 {...register('title')}
-                className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-800 border rounded-xl outline-none focus:ring-2 focus:ring-brand-gold"
+                className="w-full px-4 py-2.5 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-xl outline-none focus:ring-2 focus:ring-brand-gold dark:text-white text-brand-dark"
                 placeholder="Ex: Mansão em Alphaville"
               />
               {errors.title && <p className="text-red-500 text-[10px]">{errors.title.message}</p>}
@@ -74,7 +74,7 @@ export default function PropertyModal({ property, onClose, onSubmit }: PropertyM
               <label className="text-xs font-bold uppercase text-gray-500">Tipo</label>
               <select
                 {...register('type')}
-                className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-800 border rounded-xl outline-none focus:ring-2 focus:ring-brand-gold"
+                className="w-full px-4 py-2.5 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-xl outline-none focus:ring-2 focus:ring-brand-gold dark:text-white text-brand-dark"
               >
                 <option value="Casa">Casa</option>
                 <option value="Apartamento">Apartamento</option>
@@ -88,7 +88,7 @@ export default function PropertyModal({ property, onClose, onSubmit }: PropertyM
             <label className="text-xs font-bold uppercase text-gray-500">Localização</label>
             <input
               {...register('location')}
-              className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-800 border rounded-xl outline-none focus:ring-2 focus:ring-brand-gold"
+              className="w-full px-4 py-2.5 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-xl outline-none focus:ring-2 focus:ring-brand-gold dark:text-white text-brand-dark"
             />
             {errors.location && <p className="text-red-500 text-[10px]">{errors.location.message}</p>}
           </div>
@@ -99,7 +99,7 @@ export default function PropertyModal({ property, onClose, onSubmit }: PropertyM
               <input
                 type="number"
                 {...register('price', { valueAsNumber: true })}
-                className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-800 border rounded-xl outline-none focus:ring-2 focus:ring-brand-gold"
+                className="w-full px-4 py-2.5 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-xl outline-none focus:ring-2 focus:ring-brand-gold dark:text-white text-brand-dark"
               />
               {errors.price && <p className="text-red-500 text-[10px]">{errors.price.message}</p>}
             </div>
